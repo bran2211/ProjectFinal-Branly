@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 2 - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleproyectos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Analizador Léxico</h1>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section class="project-details">
+            <div class="project-image">
+                <img src="./images/project2.png" alt="Imagen del Proyecto 2">
+            </div>
+            <div class="project-description">
+                <h2>Descripción</h2>
+                <p>Este proyecto consiste en el desarrollo de un analizador léxico, una herramienta esencial en el proceso de compilación de lenguajes de programación. El analizador léxico, también conocido como "scanner," es el primer paso en la cadena de procesamiento de un compilador. Su función principal es leer el código fuente y dividirlo en una secuencia de tokens que representan las unidades léxicas del lenguaje, como palabras clave, identificadores, operadores, literales y símbolos.
+
+                    <br><br><strong>Características Principales:</strong>
+                    
+                    <br>-Tokenización: El analizador léxico es capaz de identificar y categorizar diferentes tipos de tokens presentes en el código fuente, como palabras clave (if, while, int, etc.), operadores (+, -, *, /), y delimitadores ({, }, (, )).
+                    
+                   <br>-Gestión de Errores Léxicos: El sistema incluye una rutina de manejo de errores léxicos, capaz de detectar y reportar caracteres o secuencias no reconocidas en el código fuente, facilitando el proceso de depuración.
+                    
+                   <br>-Flexibilidad en la Definición de Tokens: El analizador permite la configuración de reglas léxicas mediante expresiones regulares, lo que facilita la adaptación del sistema a distintos lenguajes de programación o necesidades específicas.
+                    
+                    <br>-Integración con el Análisis Sintáctico: Este proyecto está diseñado para ser una pieza modular que se pueda integrar fácilmente con un analizador sintáctico, contribuyendo a un proceso de compilación completo.</p>
+                <ul class="features">
+                    <li><span>Función 1:</span> Analizar los caracteres.</li>
+                    <li><span>Función 2:</span> Dar resultados en tokens.</li>
+                    <li><span>Función 3:</span> Optimizar codigo.</li>
+                    <li><span>Función 4:</span> Guardar tokens.</li>
+                </ul>
+                <a href="https://drive.google.com/file/d/10EdVZrm5TfctNtHq4nGSB4hfj3ATC9Ql/view?usp=sharing" class="cta-button">Ver Demo</a>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

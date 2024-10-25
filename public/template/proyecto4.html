@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 4 - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleproyectos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Registro en Pilas y Colas</h1>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section class="project-details">
+            <div class="project-image">
+                <img src="./images/project4.png" alt="Imagen del Proyecto 4">
+            </div>
+            <div class="project-description">
+                <h2>Descripción</h2>
+                <p>Este proyecto implementa un sistema de registro de mascotas y dueños, desarrollado en C++ y ejecutado en la consola. Además de gestionar los registros, el programa permite ordenar y manipular los datos utilizando estructuras de datos como pilas y colas. Asimismo, incluye ejemplos prácticos de árboles binarios de búsqueda (ABB) y árboles balanceados AVL para demostrar su funcionamiento.
+
+                    <br><br><strong>Características Principales:</strong>
+                    
+                    <br><br>Gestión de Registros:
+                    <br>-Registro de Dueños y Mascotas: El sistema permite ingresar y almacenar la información básica de dueños y sus mascotas, como nombre, dirección, raza, y edad de la mascota. Estos datos se gestionan de manera eficiente y se pueden visualizar cuando sea necesario.
+                    <br>-Búsqueda y Modificación: Los usuarios pueden buscar registros específicos y realizar modificaciones si es necesario.
+                    
+                    <br><br> Ordenamiento y Estructuras de Datos:
+                    
+                    <br>- Pilas (Stacks): Los registros pueden ordenarse y visualizarse en forma de pila, utilizando la estructura LIFO (Last In, First Out), donde el último elemento ingresado es el primero en ser procesado o eliminado.
+                    <br>-Colas (Queues): Alternativamente, los datos se pueden manejar como una cola, empleando la estructura FIFO (First In, First Out), donde el primer elemento ingresado es el primero en ser procesado o eliminado. Esto es útil para simular escenarios como listas de espera.
+                    <br><br>Árboles Binarios:
+                    
+                    <br>-Árbol Binario de Búsqueda (ABB): El proyecto incluye un ejemplo práctico de un árbol binario de búsqueda, donde los registros se insertan de manera que cada nodo a la izquierda es menor que el nodo padre y cada nodo a la derecha es mayor.
+                    <br>- Árbol AVL (Adelson-Velsky y Landis): Para demostrar la eficiencia en la búsqueda y el balanceo de datos, el sistema también implementa un árbol AVL, que es una variante del ABB que se auto-balancea para mantener una altura mínima, garantizando operaciones de inserción, búsqueda y eliminación más eficientes.
+                    <br><br>Interfaz en Consola:
+                    
+                    <br>El programa se ejecuta completamente en un entorno de consola, ofreciendo una experiencia interactiva donde los usuarios pueden navegar por las diferentes opciones, como añadir registros, ordenar datos, y visualizar los árboles, a través de menús sencillos y comandos directos.</p>
+                <ul class="features">
+                    <li><span>Función 1:</span> Registros de mascotas y dueños</li>
+                    <li><span>Función 2:</span> Orden en Filas y Colas.</li>
+                    <li><span>Función 3:</span> Graficas de árboles ABB y AVL.</li>
+                    <li><span>Función 4:</span> Edición de datos guardados.</li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1C-fkK8rMXH4E67NMtobQjWl1V6spm5Zd/view?usp=sharing" class="cta-button">Ver Demo</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

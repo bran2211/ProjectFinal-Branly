@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Cargar Font Awesome -->
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>SOBRE MÍ</h1>
+            <p>Portafolio</p>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section id="about-me">
+            <div class="about-container">
+                <h2>Oscar Branly Pixabaj Alva</h2> <!-- Nombre ahora está encima de la imagen -->
+                <img src="./images/Branly.jpg" alt="Mi Foto" class="profile-photo"> <!-- Cambia el src con la ruta de tu foto -->
+                <p>Desarrollo Web | Estudiante en Sistemas</p>
+
+                <section id="vision" class="section-bordered"> <!-- Añadimos clase para bordes -->
+                    <h2>Mi Visión</h2>
+                    <p>Crear soluciones tecnológicas que mejoren la calidad de vida de las personas, impulsando la innovación y el desarrollo.</p>
+                    <h3>“Innovar es hacer sencillo lo imposible.”</h3> <!-- Slogan -->
+                </section>
+
+                <!-- Secciones no centradas -->
+                <section id="education" class="align-left">
+                    <h2>Educación</h2>
+                    <p>Estudiante de Ingeniería en Sistemas en Universidad Mariano Gálvez de Guatemala, Sololá, con especial interés en el desarrollo de software, redes y la innovación tecnológica. He participado en proyectos que incluyen el desarrollo de aplicaciones web, automatización de procesos, y análisis de datos.</p>
+                </section>
+
+                <section id="goals" class="align-left">
+                    <h2>Objetivos Profesionales</h2>
+                    <p>Mi objetivo es seguir desarrollando mis habilidades en el desarrollo de software y la administración de redes, y aplicar este conocimiento en proyectos que tengan un impacto positivo en las personas y las empresas. A largo plazo, me gustaría trabajar en la industria tecnológica en proyectos de automatización y ciberseguridad.</p>
+                </section>
+                
+                <section id="intereses" class="align-left">
+                    <h2>Intereses Personales</h2>
+                    <p>Además de mi pasión por la tecnología, disfruto de la fotografía, el senderismo y tocar la guitarra. Me encanta aprender nuevas cosas y siempre estoy explorando maneras de mejorar tanto en lo personal como en lo profesional.</p>
+                </section>
+            </div>
+
+            <hr>
+
+            <!-- Redes sociales solo con iconos al final -->
+            <ul class="icons">
+                <li><a href="https://www.facebook.com/branly.alva.39" class="icon round fab fa-facebook-f" target="_blank" rel="noopener noreferrer"></a></li>
+                <li><a href="https://www.instagram.com/obran_alva" class="icon round fab fa-instagram" target="_blank" rel="noopener noreferrer"></a></li>
+                <li><a href="mailto:obran2211@gmail.com" class="icon round fas fa-envelope" target="_blank"></a></li>
+                <li><a href="https://github.com/bran2211" class="icon round fab fa-github" target="_blank" rel="noopener noreferrer"></a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para controlar el menú -->
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('#menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

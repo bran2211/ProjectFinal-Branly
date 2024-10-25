@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleproyectos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Manejo Operativo</h1>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section class="project-details">
+            <div class="project-image">
+                <img src="./images/project1.png" alt="Imagen del Proyecto 1">
+            </div>
+            <div class="project-description">
+                <h2>Descripción</h2>
+                <p>Programa que tiene herramientas funcionales para el manejo de actividades 
+                    y rendimiento para el sistema de windows.
+                    Este proyecto consiste en el desarrollo de una aplicación en C# que proporciona 
+                    una interfaz gráfica para la monitorización y gestión del sistema operativo Windows. 
+                    La aplicación permite a los usuarios obtener información detallada sobre la versión 
+                    del sistema operativo, gestionar procesos activos, monitorizar el uso de recursos del 
+                    sistema y visualizar las conexiones de red en tiempo real.
+                    Metodología:
+
+Desarrollo de la Interfaz Gráfica: <br> Utilizando Windows Forms, se diseñó una interfaz gráfica intuitiva que facilita la interacción del usuario con las diversas funcionalidades de la aplicación.
+<br><br>Acceso a la Información del Sistema:
+<br> ✔Versión de Windows: Se emplearon clases del espacio de nombres System.Environment para recuperar y mostrar información sobre la versión del sistema operativo.
+<br>✔Procesos Activos: Utilizando la clase System.Diagnostics.Process, se implementó la funcionalidad para listar los procesos activos y controlar su estado (pausar y detener).
+<br>✔Monitor de Recursos: Se utilizaron las clases del espacio de nombres System.Diagnostics y otras API del sistema para recuperar estadísticas en tiempo real sobre el uso de recursos del sistema, como CPU y memoria.
+<br>✔Conexiones de Red: Se accedió a la información de las conexiones de red mediante la clase System.Net.NetworkInformation, mostrando detalles relevantes de cada conexión activa.
+<br><br>Implementación de Funcionalidades de Gestión:
+<br>✔Pausar y Detener Procesos: Se utilizaron métodos del objeto Process para suspender y terminar procesos, integrando controles en la interfaz para realizar estas acciones de manera segura.
+<br>✔Monitor de Recursos: Se implementaron gráficos y tablas que reflejan el uso de recursos en tiempo real, similar a la funcionalidad del Monitor de Recursos de Windows.
+<br>✔Visualización de Conexiones de Red: Se desarrolló una vista que muestra la lista de conexiones de red activas, permitiendo a los usuarios ver detalles específicos de cada conexión.
+                </p>
+                <ul class="features">
+                    <li><span>Función 1:</span> Verificar versión de Windows.</li>
+                    <li><span>Función 2:</span> Verificar procesos activos. "Pausarlos o detenerlos"</li>
+                    <li><span>Función 3:</span> Verificar conexiones de redes en tiempo real</li>
+                    <li><span>Función 4:</span> Desplegar monitor de recursos de windows</li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1eI8kugjrp6i3F48q8HwMdBMe0WCvUaQx/view?usp=sharing" class="cta-button">Ver Demo</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

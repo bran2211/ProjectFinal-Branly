@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 5 - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleproyectos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Calculadora Permutaciones</h1>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section class="project-details">
+            <div class="project-image">
+                <img src="./images/project5.jpg" alt="Imagen del Proyecto 5">
+            </div>
+            <div class="project-description">
+                <h2>Descripción</h2>
+                <p>Este proyecto consiste en el desarrollo de una aplicación en Java diseñada para calcular y demostrar los primeros siete teoremas de permutación. La aplicación permite a los usuarios ingresar diferentes conjuntos de datos y aplicar los teoremas para obtener resultados precisos, facilitando el estudio y comprensión de la combinatoria.
+
+                    <br><br><strong>Características Principales:</strong>
+                    
+                    <br><br>Cálculo de Teoremas de Permutación:
+                    
+                    <br>Teorema 1: Permutaciones de un conjunto de n elementos, calculando n!.
+                    <br>Teorema 2: Permutaciones de n elementos con repetición, calculando n!/k1! * k2! * ... * kr! donde k1, k2, ..., kr son las frecuencias de los elementos repetidos.
+                    <br>Teorema 3: Permutaciones circulares, calculando (n-1)! para un conjunto de n elementos dispuestos en un círculo.
+                    <br>Teorema 4: Permutaciones de n elementos cuando k elementos específicos están fijos, calculando (n-k)!.
+                    <br>Teorema 5: Permutaciones de un conjunto con restricciones, donde ciertos elementos deben seguir ciertas reglas, como estar en posiciones específicas.
+                    <br>Teorema 6: Permutaciones con elementos indistinguibles, similar al teorema 2 pero aplicado en situaciones particulares con restricciones adicionales.
+                    <br>Teorema 7: Permutaciones de un conjunto que incluye elementos seleccionados de otros conjuntos, donde se calculan permutaciones con inclusión o exclusión de ciertos elementos.
+                    <br><br>Interfaz de Usuario:
+                    
+                    <br>- Gráfica Sencilla: El programa cuenta con una interfaz gráfica de usuario (GUI) intuitiva, diseñada para facilitar la entrada de datos y la visualización de resultados.
+                    <br>-Entrada de Datos: Los usuarios pueden ingresar el número de elementos y otras variables relevantes para los cálculos, como la cantidad de elementos repetidos o las restricciones específicas.
+                    <br>-Visualización de Resultados: Los resultados de cada teorema se muestran de manera clara y detallada, permitiendo al usuario ver el proceso de cálculo paso a paso.
+                    <br><br>Funciones Educativas:
+                    
+                    <br>Explicación de Teoremas: Cada teorema viene acompañado de una breve explicación teórica, ayudando a los usuarios a comprender los principios matemáticos detrás de los cálculos.
+                    
+                    <br>Optimización de Algoritmos: Los algoritmos de cálculo están optimizados para manejar grandes números y conjuntos de datos, garantizando resultados precisos y rápidos.
+                    <br> Manejo de Excepciones: El programa cuenta con manejo de excepciones para asegurar que las entradas inválidas o los cálculos que exceden los límites matemáticos sean manejados de manera adecuada.</p>
+                <ul class="features">
+                    <li><span>Función 1:</span> Analizar cada teorema.</li>
+                    <li><span>Función 2:</span> Resolver los problemas de los teoremas.</li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1an8AV9evw6u-I9Q1sg9wQdivewdfsib7/view?usp=sharing" class="cta-button">Ver Demo</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

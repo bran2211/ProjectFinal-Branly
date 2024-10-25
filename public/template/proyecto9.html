@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 9 - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleproyectos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Desarrollo Web</h1>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+            
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section class="project-details">
+            <div class="project-image">
+                <img src="./images/proyect9.png" alt="Imagen del Proyecto 9">
+            </div>
+            <div class="project-description">
+                <h2>Descripción</h2>
+                <p>Este proyecto consiste en desarrollar una aplicación web 
+                    que genere tablas de multiplicar dinámicamente utilizando JavaScript, 
+                    con la opción de exportar las tablas generadas en formato PDF. 
+                    El usuario podrá personalizar el funcionamiento del generador mediante 
+                    etiquetas o parámetros que controlan el rango de las tablas, si se listan o no, 
+                    y los límites de las multiplicaciones. La herramienta será especialmente útil 
+                    para estudiantes o cualquier persona que desee visualizar, imprimir o guardar 
+                    tablas de multiplicar de forma sencilla y personalizada.
+
+                   <br><br><strong> Características Principales:</strong>
+                    
+                   <br><br><strong>Generador de Tablas con JavaScript:</strong>
+                   <br>El generador de tablas de multiplicar está programado en JavaScript. A través de una interfaz web simple, el usuario puede ingresar los parámetros necesarios para generar una tabla de multiplicar desde una base definida hasta un límite dado.
+                  
+                   <br><br> Características clave:
+                   <br>-Etiqueta --base: Define el número base para el cual se generará la tabla de multiplicar.
+                   <br>-Etiqueta --hasta: Especifica hasta qué número se deben calcular los múltiplos.
+                   <br> -Etiqueta --limite: Determina hasta qué número se multiplicará en cada tabla.
+                   <br>-Etiqueta --listar: Opción que indica si la tabla de multiplicar debe mostrarse en la pantalla antes de exportarse a PDF.
+                   
+                   
+                   <br><br><strong>Exportación a PDF:</strong>
+                   <br>La aplicación incluye una funcionalidad que permite exportar las tablas generadas en un archivo PDF, lo que facilita su almacenamiento o impresión. Para esto, se utilizarán bibliotecas como jsPDF o html2pdf.
+                  
+                   <br><br>Características clave:
+                   <br>Exportación automática de la tabla generada en PDF.
+                   <br>Personalización del formato del PDF (estilo, colores, fuente).
+                   <br> Opción para guardar el PDF en una carpeta específica.
+                   
+                   
+                   <br><br><strong>Etiquetas Personalizables:</strong>
+                   <br>El generador acepta varios parámetros para personalizar las tablas:
+                   <br> --base: Define el número para el que se creará la tabla de multiplicar (ejemplo: --base 5 genera la tabla del 5).
+                   <br> --hasta: Permite establecer el número final hasta donde se generarán las tablas (ejemplo: --hasta 10 genera las tablas hasta el 10).
+                   <br> --limite: Controla hasta qué número se realizarán las multiplicaciones en cada tabla (ejemplo: --limite 12 genera hasta el 12 en cada tabla).
+                   <br> --listar: Si está activado, muestra las tablas en pantalla antes de generar el PDF.
+                  
+                  
+                   <br><br> <strong>Interfaz Web Amigable:</strong>
+                   <br>Campos de entrada para las etiquetas --base, --hasta, --limite y un checkbox para --listar.
+                   <br>Botón para generar y exportar la tabla en PDF.
+                   <br>Diseño limpio y minimalista para facilitar la interacción del usuario.
+                  
+                </p>
+                <ul class="features">
+                    <li><span>Función 1:</span> Generación de Tablas De Multiplicar</li>
+                    <li><span>Función 2:</span> Exportación a PDF</li>
+                    <li><span>Función 3:</span> PComandos Personalizados</li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1ni5bjEPobAbDgg-4tQrykZLagbiDAJ9j/view" class="cta-button">Ver Demo</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

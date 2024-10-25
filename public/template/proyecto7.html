@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 7 - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleproyectos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Cisco Packet Tracer</h1>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section class="project-details">
+            <div class="project-image">
+                <img src="./images/project7.jpg" alt="Imagen del Proyecto 7">
+            </div>
+            <div class="project-description">
+                <h2>Descripción</h2>
+                <p>Este proyecto tiene como objetivo simular y configurar una red en Cisco Packet 
+                    Tracer que incorpore los servicios esenciales de red, como DNS, DHCP, HTTP y HTTPS. 
+                    La simulación permitirá observar cómo funcionan estos protocolos en una red, su configuración, 
+                    interacción y cómo cada uno contribuye al funcionamiento eficiente de la comunicación en redes. 
+                    El proyecto incluye tanto la configuración de los dispositivos de red como la implementación 
+                    de los servidores y servicios para simular un entorno de red real.
+
+                   <br><br><strong> Características Principales:</strong>
+                    
+                   <br><br><strong>Servidor DNS: </strong> 
+                   <br>Se configura un servidor DNS (Domain Name System) encargado de traducir nombres de dominio a direcciones IP y viceversa. Esto facilita la navegación por la red, ya que los usuarios pueden acceder a sitios web mediante nombres fáciles de recordar, en lugar de direcciones IP numéricas.
+                   
+                   <br><br>Características clave:
+                   <br>-Resolución de nombres de dominio a IP.
+                   <br>-Mantenimiento de registros DNS como A, MX, CNAME.
+                    
+                   <br><br><strong>Servidor DHCP:</strong>
+                   <br> El servidor DHCP (Dynamic Host Configuration Protocol) asigna automáticamente direcciones IP y otros parámetros de red (como la puerta de enlace predeterminada y servidores DNS) a los dispositivos que se conectan a la red, evitando la necesidad de configurarlos manualmente.
+                   <br><br> Características clave:
+                   <br> -Asignación automática de direcciones IP.
+                   <br> -Configuración de opciones como máscara de subred y gateway.
+                   <br> -Simplificación de la administración de red en redes dinámicas.
+
+                   <br><br> <strong>Servidor HTTP:</strong>
+                   <br> El servidor HTTP (HyperText Transfer Protocol) permite la visualización de sitios web en la red local mediante el protocolo de transferencia de hipertexto. Los usuarios pueden acceder a contenido web desde navegadores utilizando el protocolo HTTP.
+                  
+                   <br><br> Características clave:
+                   <br>-Transferencia de datos en forma de páginas web.
+                   <br>-Uso del puerto 80 para comunicación.
+                   <br>-Ideal para simular sitios web internos en redes locales.
+                   
+                   <br><br><strong>Servidor HTTPS:</strong>
+                   <br>El servidor HTTPS (HyperText Transfer Protocol Secure) extiende el protocolo HTTP añadiendo una capa de seguridad mediante el uso de SSL/TLS (Secure Sockets Layer/Transport Layer Security), proporcionando encriptación para garantizar la integridad y confidencialidad de los datos transmitidos.
+                   
+                   <br><br>Características clave:
+                   <br>- Comunicación segura y encriptada.
+                   <br>-Uso del puerto 443 para comunicación.
+                   <br>-Autenticación del servidor para proteger a los usuarios contra ataques de intermediarios.
+
+                </p>
+                <ul class="features">
+                    <li><span>Función 1:</span> Interacción entre protocolos</li>
+                    <li><span>Función 2:</span> Configuración y pruebas</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=JTAvQQ5PPmk" class="cta-button">Ver Demo</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 3 - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleproyectos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Juego de Memoria</h1>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section class="project-details">
+            <div class="project-image">
+                <img src="./images/project3.png" alt="Imagen del Proyecto 3">
+            </div>
+            <div class="project-description">
+                <h2>Descripción</h2>
+                <p>“Juego de memoria Dragon Ball Z” trata de poder capturar los pares, 
+                    usando la programación orientada a objetos, en este caso mi interfaz gráfica utiliza objetos 
+                    como lo son la pantalla inicio y los botones, labels, texts, luego seguimos con la parte fundamental 
+                    la cual es el centro del juego, donde La POO, es muy notoria ya que utilizamos paquetes de imágenes, 
+                    para poder hacer el llamado de cada una al hacer click.
+                    <br><br>Este proyecto consiste en la implementación de un juego de memoria clásico, desarrollado en Java utilizando principios de programación orientada a objetos (OOP). El objetivo del juego es encontrar pares de cartas idénticas en una cuadrícula, poniendo a prueba la memoria visual y la capacidad de concentración del jugador.
+
+<br><br><strong>Características Principales:</strong>
+
+<br><br>Diseño Orientado a Objetos:
+
+<br>-Clases Principales: El juego está estructurado en varias clases, como Carta, Tablero, y Juego, cada una encargada de una parte específica de la funcionalidad.
+<br>-Encapsulamiento y Modularidad: El diseño modular permite que cada componente del juego sea fácilmente mantenible y extensible.
+
+<br><br>Interfaz Gráfica de Usuario (GUI):
+
+<br>-El juego incluye una interfaz gráfica intuitiva donde las cartas se representan como botones en una cuadrícula. Al hacer clic en una carta, esta se voltea revelando su imagen.
+<br>-El diseño de la interfaz permite que los jugadores interactúen de manera simple y directa, mejorando la experiencia de usuario.
+<br><br>Lógica del Juego:
+
+<br>-Manejo de Pares: El juego controla la lógica de emparejamiento, volteando automáticamente las cartas a su posición original si no coinciden, o manteniéndolas descubiertas si forman un par.
+<br>-Control de Niveles: El juego puede estar configurado para diferentes niveles de dificultad, ajustando la cantidad de cartas en el tablero según el nivel seleccionado.
+<br><br>Control de Puntaje y Tiempo:
+
+<br>-El programa lleva un registro del número de intentos y el tiempo total que el jugador tarda en completar el juego, ofreciendo una evaluación del rendimiento.
+<br>-Se incluye un sistema de puntuación basado en la cantidad de intentos y el tiempo, incentivando a los jugadores a mejorar sus marcas personales.
+<br><br>Rejugabilidad:
+
+<br>-El tablero se genera de manera aleatoria en cada partida, garantizando que ninguna sesión de juego sea igual a la anterior.
+<br>-La estructura del código permite añadir nuevas cartas y mejorar la complejidad del juego fácilmente.
+
+                    </p>
+                <ul class="features">
+                    <li><span>Función 1:</span> Juego para dos personas.</li>
+                    <li><span>Función 2:</span> Siempre cambia imaganes y posiciones.</li>
+                    <li><span>Función 3:</span> Da el resultado del ganador.</li>
+                    <li><span>Función 4:</span> Interfaz de usuario moderna y llamativa.</li>
+                </ul>
+                <a href="https://www.flipsnack.com/5AA65F88B7A/manual-de-usuario.html" class="cta-button">Ver Demo</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

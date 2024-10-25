@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 8 - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleproyectos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Raspberry Pi 3</h1>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section class="project-details">
+            <div class="project-image">
+                <img src="./images/proyect8.jpg" alt="Imagen del Proyecto 8">
+            </div>
+            <div class="project-description">
+                <h2>Descripción</h2>
+                <p> Este proyecto tiene como objetivo utilizar una Raspberry Pi 3 
+                    para controlar el encendido y apagado de un foco a través de un módulo relay 2CH 5VDC. 
+                    La Raspberry Pi servirá como controlador principal, gestionando la alimentación del foco
+                     mediante el módulo relay, el cual actuará como un interruptor que se controla de forma 
+                     digital a través de los pines GPIO de la Raspberry. Este proyecto es un ejemplo básico 
+                     de automatización de tareas, que puede ser escalado para el control de múltiples dispositivos eléctricos.
+                   <br><br><strong> Características Principales:</strong>
+                    
+                   <br><br><strong>Raspberry Pi 3: </strong>
+                   <br> La Raspberry Pi 3 actúa como el cerebro del sistema, encargada de recibir órdenes y activar o desactivar el foco mediante los pines GPIO.
+                   
+                   <br><br>Características clave:
+                   <br> -Procesador ARM Cortex-A53 Quad Core.
+                   <br>-Pines GPIO configurables para enviar señales digitales.
+                   <br> -Sistema operativo Raspbian o cualquier distribución de Linux compatible.
+
+                   <br><br><strong>Módulo Relay 2CH 5VDC:</strong>
+                   <br> El módulo relay de 2 canales actúa como un interruptor controlado eléctricamente, permitiendo encender y apagar dispositivos de mayor potencia (como un foco) con señales de bajo voltaje desde la Raspberry Pi.
+                  
+                   <br><br>Características clave:
+                   <br>-Tensión de entrada: 5VDC.
+                   <br>-Dos relays independientes para controlar dos dispositivos.
+                   <br>-Capaz de controlar cargas de corriente alterna y corriente continua.
+                   <br>-Aislado eléctricamente para proteger la Raspberry Pi.
+
+                   <br><br><strong>Foco:</strong>
+
+                   <br>El foco representa la carga controlada. Al ser un dispositivo de mayor potencia, no se puede conectar directamente a la Raspberry Pi, por lo que se utiliza el módulo relay como intermediario.
+                   <br>Características clave:
+                   <br>Alimentación desde una fuente externa (220V o 110V dependiendo de la región).
+                   <br>Control de encendido y apagado mediante el relay.
+
+
+                </p>
+                <ul class="features">
+                    <li><span>Función 1:</span> Configuración de la Raspberry Pi</li>
+                    <li><span>Función 2:</span> Control del Relay</li>
+                    <li><span>Función 3:</span> Interfaz de Control</li>
+                    <li><span>Función 4:</span> Seguridad y Aislamiento Eléctrico</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=ba155-P6foM" class="cta-button">Ver Demo</a>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

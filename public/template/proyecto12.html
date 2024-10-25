@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 9 - Oscar Branly Pixabaj Alva</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styleproyectos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Desarrollo Web</h1>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="proyecto1.html">Proyecto 1</a></li>
+            <li><a href="proyecto2.html">Proyecto 2</a></li>
+            <li><a href="proyecto3.html">Proyecto 3</a></li>
+            <li><a href="proyecto4.html">Proyecto 4</a></li>
+            <li><a href="proyecto5.html">Proyecto 5</a></li>
+            <li><a href="proyecto6.html">Proyecto 6</a></li>
+            <li><a href="proyecto7.html">Proyecto 7</a></li>
+            <li><a href="proyecto8.html">Proyecto 8</a></li>
+            <li><a href="proyecto9.html">Proyecto 9</a></li>
+            <li><a href="proyecto10.html">Proyecto 10</a></li>
+            <li><a href="proyecto11.html">Proyecto 11</a></li>
+            <li><a href="proyecto12.html">Proyecto 12</a></li>
+            
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section class="project-details">
+            <div class="project-image">
+                <img src="./images/railway.png" alt="Imagen del Proyecto 9">
+            </div>
+            <div class="project-description">
+                <h2>Descripción</h2>
+                <p>Este proyecto consiste en una página web inicialmente construida en HTML 
+                    y convertida a HBS (Handlebars) para mejorar la reutilización de componentes 
+                    y la gestión de plantillas dinámicas. La página está alojada en la plataforma 
+                    Railway, un servicio de despliegue en la nube que facilita el proceso de hosting 
+                    y administración. La aplicación está configurada para correr en el puerto 8081, y 
+                    utiliza un enfoque modular para optimizar la estructura del código, permitiendo una 
+                    mejor organización y mantenimiento.
+
+                   <br><br><strong> Características Principales:</strong>
+                    
+                   <br><br> <strong>Conversión de HTML a HBS:</strong>Conversión de HTML a HBS: 
+                   <br>La página fue transformada de HTML estático a HBS, aprovechando la capacidad de Handlebars para usar plantillas dinámicas y parciales.
+                   
+                   
+                   <br><br><strong>Despliegue en Railway: </strong>Despliegue en Railway: 
+                   <br>La aplicación está alojada en Railway, facilitando la implementación y administración de la web en un entorno en la nube.
+                  
+                  
+                   <br><br><strong>Estructura modular: </strong> 
+                   <br>Gracias a HBS, se ha separado el header, footer y otros componentes reutilizables, lo que simplifica el desarrollo y mantenimiento del proyecto.
+                  
+                  
+                   <br><br><strong>Uso del puerto 8081: </strong>
+                   <br>La aplicación está configurada para ejecutarse en el puerto 8081, lo que permite una personalización en el entorno de despliegue.
+                  
+                  
+                   <br> <br><strong>Diseño responsivo: </strong> 
+                   <br>Mantiene un diseño responsivo optimizado para diferentes dispositivos, asegurando una experiencia de usuario óptima en móviles, tablets y computadoras.
+                  
+                  
+                   <br> <br><strong>Integración con Railway:</strong>  
+                   <br>La página está totalmente integrada con Railway, lo que facilita actualizaciones y monitoreo continuo del estado de la aplicación.
+                  
+                </p>
+                <ul class="features">
+                    <li><span>Función 1:</span> Reutilización de componentes:</li>
+                    <li><span>Función 2:</span> Despliegue automatizado</li>
+                    <li><span>Función 3:</span>Configuración de puerto personalizado</li>
+                    <li><span>Función 4:</span> Gestión de rutas con Node.js</li>
+                </ul>
+                <a href="https://05-webserver-railway-production-8fac.up.railway.app/" class="cta-button">Ver Demo</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Oscar Branly Pixabaj Alva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
